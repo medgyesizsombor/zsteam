@@ -1,0 +1,126 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary-color: #1e3f7e;
+  --header-background-color: #171a21;
+  --background-color: #1a293a;
+  --light-color: #ffffff;
+  --header-text-color: #b8b6b4;
+  --primary-text-color: #66c0f4;
+}
+
+body {
+  color: var(--primary-text-color) !important;
+}
+
+.content {
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  margin: 0;
+  background-color: var(--background-color) !important;
+}
+
+.primary-text-color {
+  color: var(--primary-text-color) !important;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.header-background-color {
+  background-color: var(--header-background-color) !important;
+}
+
+.header-text-color,
+.header-text-color:visited {
+  color: var(--header-text-color) !important;
+}
+
+.header-text-color:active,
+.header-text-color:hover,
+.header-text-color:focus {
+  color: #dddcdb !important;
+}
+
+.background-color {
+  background-color: var(--background-color) !important;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh !important;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 5px solid var(--primary-text-color);
+}
+
+.card {
+  width: 350px;
+  border: 5px solid var(--primary-text-color);
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
